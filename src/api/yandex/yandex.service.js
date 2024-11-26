@@ -11,10 +11,8 @@ export class YandexService {
 		region: 'ru-central1',
 		endpoint: 'https://storage.yandexcloud.net',
 		credentials: {
-			accessKeyId: 'YCAJEW5b_ovJeacpS-hdNtRl0',
-			// accessKeyId: import.meta.env['VITE_CLOUD_ACCESS'] || '',
-			secretAccessKey: 'YCOr-Hi4mpwJwIaIH3NiWg0xMsw17VpGilCCFr_G',
-			// secretAccessKey: import.meta.env['VITE_CLOUD_SECRET'] || '',
+			accessKeyId: import.meta.env['VITE_CLOUD_ACCESS'] || '',
+			secretAccessKey: import.meta.env['VITE_CLOUD_SECRET'] || '',
 		},
 	});
 
