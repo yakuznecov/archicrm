@@ -1,0 +1,33 @@
+// inputs scss
+
+// убирает внутренние стрелки в инпутах с number
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.custom__input {
+	border: 1px solid #ccc; // Цвет обводки по умолчанию
+	box-shadow: none; // Тень по умолчанию
+
+	&:focus {
+		outline: 0;
+		border-color: rgba(78, 180, 127, 0.5); // Цвет обводки при фокусировке
+		box-shadow: 0 0 0 2px rgba(78, 180, 127, 0.5); // Тень при фокусировке (зеленая с прозрачностью)
+	}
+}
+
+.archi__second_input {
+	padding: 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #333;
+	box-shadow: none;
+
+	&:focus {
+		border-color: #6063aa;
+		box-shadow: 0 0 0 1px rgba(96, 99, 170, 0.5);
+	}
+}

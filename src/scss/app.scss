@@ -1,0 +1,72 @@
+//Fonts
+@import "custom/fonts/fonts";
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "./node_modules/bootstrap/scss/mixins.scss";
+@import "variables-dark";
+@import "custom/variables/archi-variables";
+
+
+// Structure
+@import "custom/structure/general";
+@import "custom/structure/topbar";
+@import "custom/structure/page-head";
+@import "custom/structure/footer";
+@import "custom/structure/horizontal-nav";
+@import "custom/structure/layouts";
+
+// Components
+@import "custom/components/root";
+@import "custom/components/waves";
+@import "custom/components/avatar";
+@import "custom/components/alerts";
+@import "custom/components/accordion";
+@import "custom/components/helper";
+@import "custom/components/preloader";
+@import "custom/components/forms";
+@import "custom/components/widgets";
+@import "custom/components/demos";
+
+// Plugins
+@import "custom/plugins/switch";
+@import "custom/plugins/colorpicker";
+@import "custom/plugins/datepicker";
+@import "custom/plugins/bootstrap-touchspin";
+@import "custom/plugins/repeater";
+@import "custom/plugins/form-upload";
+@import "custom/plugins/form-wizard";
+@import "custom/plugins/responsive-table";
+@import "custom/plugins/datatable";
+@import "custom/plugins/table-editable";
+@import "custom/plugins/apexcharts";
+@import "custom/plugins/flot";
+@import "custom/plugins/sparkline-chart";
+@import "custom/plugins/google-map";
+@import "custom/plugins/vector-maps";
+@import "custom/plugins/leaflet-maps";
+
+
+// Global
+@import "custom/global/global";
+@import "custom/global/status";
+
+// Select
+@import "custom/select/select";
+
+// Radio
+@import "custom/radio/radio";
+
+// Table
+@import "custom/table/table";
+
+// Datepicker
+@import "custom/datepicker/datepicker";
+
+// Inputs
+@import "custom/inputs/inputs";
+
+// Profile card
+@import "custom/profile-card/profile-card";

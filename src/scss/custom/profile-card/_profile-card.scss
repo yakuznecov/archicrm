@@ -1,0 +1,35 @@
+.profile__card_title {
+	color: $archi-purple;
+}
+
+.archi__nav_tabs {
+
+	.nav-item {
+		position: relative;
+		color: $dark;
+
+		.nav-link {
+			border: none;
+
+			&::after {
+				content: "";
+				background: $archi-blue;
+				height: 2px;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: -2px;
+				transition: all 250ms ease 0s;
+				transform: scale(0);
+			}
+
+			&.active {
+				color: $archi-purple;
+
+				&:after {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}

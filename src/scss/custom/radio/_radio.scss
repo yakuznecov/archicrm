@@ -1,0 +1,63 @@
+// work shedule radio
+
+.work__shedule_radio {
+	display: flex;
+	margin: 8px 0;
+}
+
+.archi__radio_btn {
+	border-color: $archi-purple;
+}
+
+.btn-check:checked+.archi__radio_btn {
+	color: #fff;
+	border-color: $archi-purple;
+	background-color: $archi-purple;
+
+	&:hover {
+		border-color: $archi-purple;
+		background-color: $archi-purple;
+	}
+}
+
+.btn-check+.archi__radio_btn:hover {
+	color: #fff;
+	border-color: $archi-red;
+	background-color: $archi-red;
+}
+
+// application_radio
+
+.application_radio {
+	display: flex;
+}
+
+.archi__radio {
+	margin-right: 12px;
+	width: 2em;
+	height: 2em;
+	border-color: $archi-red;
+
+	&:checked {
+		background-color: $archi-red;
+		border-color: $archi-red;
+	}
+
+	&._coming {
+		border-color: $archi-green;
+
+		&:checked {
+			background-color: $archi-green;
+			border-color: $archi-green;
+		}
+	}
+
+	&._separate {
+		border-color: $archi-blue;
+
+		&:checked {
+			background-color: $archi-blue;
+			border-color: $archi-blue;
+		}
+	}
+}

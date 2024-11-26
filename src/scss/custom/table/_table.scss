@@ -1,0 +1,73 @@
+// archi table
+
+.archi__table_container {
+	margin-bottom: 32px;
+
+	thead th {
+		color: #6063aa;
+		font-weight: 700;
+	}
+
+	tbody {
+		tr {
+			&:nth-child(even) {
+				background-color: rgba(93, 182, 216, 0.1);
+			}
+		}
+	}
+
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 8px;
+		cursor: pointer;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		margin-bottom: 10px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #e0e0e0;
+		border-radius: 100px;
+		background-clip: padding-box;
+	}
+}
+
+.archi__table {
+	tr {
+		border-width: 4px 0;
+		border-bottom-color: #fafafa;
+	}
+
+	td {
+		position: relative;
+		padding: 5px;
+		font-size: 14px;
+		vertical-align: middle;
+	}
+}
+
+.archi__table_bold {
+	td {
+		font-weight: 700;
+		color: #000;
+	}
+}
+
+.even-row {
+	background-color: #f2f2f2;
+	/* Цвет четных строк */
+}
+
+.cellBg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(238, 114, 105, 0.1);
+	z-index: 0;
+}

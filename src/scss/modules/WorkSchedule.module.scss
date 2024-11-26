@@ -1,0 +1,185 @@
+.schedule__wrapper {
+	border-radius: 20px !important;
+	box-shadow: 0px 0px 35px rgba(212, 20, 90, 0.25) !important;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 36px;
+}
+
+.period {
+	max-width: 285px;
+	width: 100%;
+
+	:global(.rdp-caption_label) {
+		text-transform: capitalize;
+	}
+}
+
+.header__title {
+	font-size: 20px;
+	line-height: 20px;
+	color: #D60623;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.choose__city {
+	max-width: 420px;
+	width: 100%;
+}
+
+.table__month {
+	font-size: 13px;
+	line-height: 13px;
+	color: #414141;
+	font-weight: 700;
+	text-align: center;
+	padding: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom-width: 2px;
+}
+
+.table__container {
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 8px;
+		cursor: pointer;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		margin-bottom: 10px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #e0e0e0;
+		border-radius: 100px;
+		background-clip: padding-box;
+	}
+}
+
+.schedule__table {
+	width: 100%;
+
+	thead tr th:first-child {
+		border-left: 1px solid rgba(0, 0, 0, 0.3);
+		border-right: 1px solid rgba(0, 0, 0, 0.3);
+		text-align: center;
+	}
+
+	// center first column
+	tbody tr td:first-child {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	thead tr th:last-child {
+		border-right: 1px solid rgba(0, 0, 0, 0.3);
+	}
+
+	td {
+		padding: 0 !important;
+	}
+
+	* {
+		border-top-width: 0;
+	}
+
+	.cell {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 10px;
+		line-height: 17px;
+		font-weight: 600;
+		color: #000;
+		text-align: center;
+		min-width: 40px;
+		height: 40px;
+		cursor: pointer;
+		user-select: none;
+		transition: all 0.3s ease;
+
+		&:hover {
+			font-weight: 700;
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+	}
+}
+
+.cell__date {
+	font-size: 10px;
+	line-height: 10px;
+	color: #414141;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 3px;
+
+	span {
+		font-size: 10px;
+	}
+}
+
+.cell__staff {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 0 4px 0 8px;
+	width: 210px;
+	height: 40px;
+}
+
+// должность сотрудника
+.position {
+	font-size: 10px;
+	line-height: 10px;
+	color: #8F8F8F;
+	margin-bottom: 4px;
+}
+
+.name {
+	font-size: 14px;
+	line-height: 14px;
+	color: #565656;
+}
+
+.cell__footer {
+	text-align: center;
+	font-size: 11px;
+	line-height: 16px;
+	color: #565656;
+}
+
+.cell__footer_stat {
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	color: #000;
+	text-align: center;
+
+	&:first-child {
+		margin-top: 3px;
+	}
+}
+
+.todayDate {
+	font-weight: 700;
+	font-size: 130%;
+	color: #D60623;
+}
+
+.selectedDate:not([disabled]) {
+	border: 2px solid #D60623;
+	background-color: #D60623;
+	color: #fff;
+}
+
+.selectedDate:hover:not([disabled]):not(.rdp-day_selected) {
+	background-color: #D60623;
+}

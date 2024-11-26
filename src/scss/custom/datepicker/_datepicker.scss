@@ -1,0 +1,115 @@
+// date picker scss
+
+.react-datepicker-popper {
+	z-index: 1000;
+}
+
+
+.archi__datepicker_input {
+	width: 100%;
+	height: 40px;
+	padding: 0 16px;
+	border: 1px solid #BFBFBF;
+	font-size: 20px;
+	line-height: 20px;
+	color: #565656;
+	font-weight: 600;
+	border-radius: 4px;
+	background: #FFFFFF;
+}
+
+.archi__datepicker {
+
+	// Цвет выбранной даты в календаре
+	.react-datepicker__day--selected {
+		background-color: #6063aa;
+
+		&:hover {
+			background-color: darken(#6063aa, 10%);
+		}
+	}
+
+	// Цвет даты при наведении на нее и выборе других дат в календаре
+	.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range) {
+		background-color: #ee7269;
+	}
+}
+
+// Календарь с выбором времени
+.archi__datepicker_Timeinput {
+	width: 100%;
+	height: 38px;
+	padding: 0 8px;
+	border: 2px solid #f39b38;
+	font-size: 15px;
+	line-height: 15px;
+	text-align: center;
+	color: #000;
+	font-weight: 700;
+	border-radius: 4px;
+	background: #FFFFFF;
+
+	&:focus {
+		outline: 0;
+		border-color: rgba(96, 99, 170, 0.5); // Цвет обводки при фокусировке
+		box-shadow: 0 0 0 1px rgba(96, 99, 170, 0.5); // Тень при фокусировке (зеленая с прозрачностью)
+	}
+}
+
+.archi__datepicker_Timeinput {
+
+	// Цвет выбранной даты в календаре
+	.react-datepicker__day--selected {
+		background-color: #6063aa;
+
+		&:hover {
+			background-color: darken(#6063aa, 10%);
+		}
+	}
+
+	// Цвет даты при наведении на нее и выборе других дат в календаре
+	.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range) {
+		background-color: #ee7269;
+	}
+}
+
+.archi__datepicker_time {
+
+	.react-datepicker__time-list-item--disabled {
+		display: none;
+	}
+
+	.react-datepicker__day--today {
+		border-radius: 4px;
+		color: #fff;
+		background-color: #ee7269;
+	}
+
+	.react-datepicker__day--selected {
+		background-color: #6063aa;
+	}
+
+	.react-datepicker__time-list-item--selected {
+		background-color: #5db6d8 !important;
+	}
+
+	.react-datepicker__time-list {
+		&::-webkit-scrollbar {
+			width: 4px;
+			height: 71px;
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: transparent;
+			margin-bottom: 8px;
+		}
+
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: #ee7269;
+			border-radius: 100px;
+			background-clip: padding-box;
+		}
+	}
+}

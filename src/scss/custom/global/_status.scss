@@ -1,0 +1,53 @@
+// archi status
+
+.archi__status {
+	display: inline-block;
+	padding: 4px 6px;
+	border-radius: 5px;
+	font-size: 10px;
+	text-align: center;
+	font-weight: 600;
+	color: #fff;
+	background-color: $archi-green;
+
+	&.archi__status_inWorking {
+		background-color: $archi-blue;
+	}
+
+	&.archi__status_spam {
+		background-color: $archi-red;
+	}
+
+	&.archi__status_forCall {
+		background-color: $archi-orange;
+	}
+
+	&.archi__status_new {
+		background-color: #0077B5;
+	}
+
+	&.archi__status_pending {
+		background-color: #1991EB;
+	}
+
+	&.archi__status_accept {
+		background-color: #e4405f;
+	}
+}
+
+.archi__status_update {
+	display: inline-block;
+	padding: 7px 10px;
+	border-radius: 5px;
+	font-size: 13px;
+	text-align: center;
+	font-weight: 600;
+	color: #fff;
+	background-color: $archi-purple;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darken($archi-purple, 10%);
+	}
+}

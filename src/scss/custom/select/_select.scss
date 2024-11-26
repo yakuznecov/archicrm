@@ -1,0 +1,166 @@
+// selects scss
+
+.main__select {
+	width: 100%;
+
+	.main__select__indicator-separator {
+		display: none;
+	}
+
+	.main__select__menu {
+		animation: fadeIn 0.3s ease-in-out;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+			transform: translateY(24px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.main__select__option {
+		@media (max-width: 480px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	.main__select__control {
+		&:hover {
+			border-color: #5881E2;
+			box-shadow: inset 0px 0px 2px #5881E2;
+		}
+	}
+
+	.main__select__option--is-focused {
+		background-color: #6063aa;
+		color: #fff;
+	}
+
+	.main__select__single-value {
+		color: #e4405f;
+		font-weight: 600;
+	}
+
+	.main__select__indicator {
+		padding: 8px 10px;
+	}
+
+	.main__select__menu-list {
+		z-index: 999;
+
+		/* Общие стили для скроллбара */
+		&::-webkit-scrollbar {
+			width: 8px;
+			/* ширина скроллбара */
+		}
+
+		/* Стили для трека скроллбара */
+		&::-webkit-scrollbar-track {
+			background-color: #f1f1f1;
+			/* цвет фона трека скроллбара */
+			border-radius: 5px;
+			/* радиус углов трека скроллбара */
+		}
+
+		/* Стили для ползунка скроллбара */
+		&::-webkit-scrollbar-thumb {
+			background-color: #8285bd;
+			/* цвет ползунка скроллбара */
+			border-radius: 5px;
+			/* радиус углов ползунка скроллбара */
+		}
+	}
+
+	.main__select__control--is-focused {
+		background: rgba(219, 230, 255, 0.2);
+		border-color: #5881E2;
+		box-shadow: inset 0px 0px 2px #5881E2;
+	}
+
+	.main__select__option--is-selected {
+		color: #fff;
+		font-weight: 600;
+		background: #4eb580;
+		box-shadow: 0 0 0 1px #4eb580;
+	}
+
+	// worker select time
+	&.worker__select {
+		.main__select__menu {
+			padding-right: 8px;
+		}
+
+		.main__select__menu-list {
+			max-height: 248px;
+		}
+
+		.main__select__option--is-selected {
+			color: #000;
+			background: transparent;
+			box-shadow: none;
+		}
+
+		.main__select__option--is-focused,
+		.main__select__option--is-selected {
+			background-color: transparent;
+		}
+	}
+
+	.main__select__multi-value {
+		background-color: #4eb47f;
+
+		.main__select__multi-value__label {
+			color: #fff;
+		}
+	}
+}
+
+/* Стилизация основного контейнера */
+.select-container {
+	display: inline-block;
+	position: relative;
+}
+
+/* Скрытие стандартной стрелки селекта */
+.select-container select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 6px 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: white;
+	cursor: pointer;
+
+	option {
+		color: #010101;
+	}
+}
+
+/* Стилизация стрелки */
+.select-container::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	display: inline-block;
+	background-image: url('../../../images/icons/arrows/arrow-sidebar.svg');
+	background-repeat: no-repeat;
+	transform: translateY(-50%);
+	height: 16px;
+	width: 16px;
+	pointer-events: none;
+}
+
+/* Изменение стиля при наведении на селект */
+.select-container:hover::after {
+	color: #007bff;
+	/* Измените цвет при наведении, если хотите */
+}
